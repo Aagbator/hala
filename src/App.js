@@ -1,11 +1,12 @@
 import React from 'react';
 import Navigation from './components/navigation/navigation.component';
+import Homepage from './pages/homepage.component';
 
 function App() {
   return (
     <div>
       <Navigation></Navigation>
-      <h1>Hello World</h1>
+      <Homepage></Homepage>
     </div>
   );
 }
