@@ -11,10 +11,8 @@
         @include md {
             flex-direction: row;
         }
-        
     
         .nav-menu{
-            display: flex;
             display: none;
             background-color: $white;
             position:fixed;
@@ -24,6 +22,12 @@
             bottom: 0;
             padding: 100px 0;
             z-index: 5;
+            transition: 2s ease-in-out;
+            &.is-open{
+                display: flex;
+                animation: fadeOpen 0.3s ease-in;
+            }
+
             @include md {
                 display: flex;
             }
@@ -52,6 +56,7 @@
                             @include md {
                                 cursor:pointer;
                                 color: $primary-hover;
+                                background-color: transparent;
                             }
                             cursor:pointer;
                             background-color: $primary-hover;
@@ -87,6 +92,11 @@
             margin-left: auto;
             color: #fff;
             background-color: $main-color;
+            &:hover, &:active{
+                @include md {
+                    cursor:pointer;
+                }
+            }
         }
         .open-btn{
             margin-left: 30px;
@@ -115,5 +125,18 @@
 // 1400px window width and more
     @include rwd(1400) {
         
+    }
+}
+
+@keyframes fadeOpen {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+        display:block;
     }
 }

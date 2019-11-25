@@ -1,8 +1,7 @@
 import './footer.styles.scss';
-import React, { Component } from 'react';
+import React from 'react';
 import LineIcon from 'react-lineicons';
-import Logo2 from '../../../src/assets/logo-light.svg'
-import LogoIcon from '../../../src/assets/logo-icon.svg'
+import Logo2 from '../../../src/assets/logo-light.svg';
 import GooglePlay from '../../assets/images/google-play.png';
 import AppStore from '../../assets/images/app-store.png';
 
