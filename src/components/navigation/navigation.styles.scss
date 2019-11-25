@@ -1,36 +1,83 @@
 @import '../../scss/variables';
 
 .navigation {
+    padding: 0 20px;
     .main-nav{
         padding: 10px 0px;
         margin-left: auto;
         margin-right: auto;
         max-width: 1100px;
         display: flex;
-        flex-direction: row;
+        @include md {
+            flex-direction: row;
+        }
+        
     
         .nav-menu{
             display: flex;
+            display: none;
+            background-color: $white;
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom: 0;
+            padding: 100px 0;
+            z-index: 5;
+            @include md {
+                display: flex;
+            }
+            
             ul{
                 display:flex;
-                @include sm {
-                    flex-direction:column;
+                flex-direction:column;
+                width:100%;
+                @include md {
+                    flex-direction:row;
                 }
                 li{
                     a{
+                        font-size: 2rem;
                         text-decoration: none;
-                        display: inline-block;
+                        display: block;
                         padding:20px;
-                        &:hover{
-                            cursor:pointer;
-                            color: $primary-hover;
+                        text-align: center;
+                        @include md {
+                            font-size: 1rem;
+                            display: inline-block;
+                            text-align: none;
                         }
+                        padding:20px;
+                        &:hover, &:active{
+                            @include md {
+                                cursor:pointer;
+                                color: $primary-hover;
+                            }
+                            cursor:pointer;
+                            background-color: $primary-hover;
+                            color: $white;
+                        }
+            
                     }
                 }
             }
-            @include sm {
-                position:fixed;
+            
+            @include md {
+                padding: 0;
+                position: static;
 
+            }
+
+            .close-btn{
+                position: absolute;
+                top:30px;
+                left: calc(50% - 13.5px);
+                @include md {
+                    display: none;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     
@@ -41,6 +88,15 @@
             color: #fff;
             background-color: $main-color;
         }
+        .open-btn{
+            margin-left: 30px;
+            box-sizing: border-box;
+            padding-top: 7px;
+            height: 50px;
+            @include md {
+                display: block;
+            }
+        }
     }
     
 
@@ -50,7 +106,7 @@
     }
     // 768px window width and more
     @include md {
-        padding: 0 0px;
+        padding: 0 10px;
     }
 // 992px window width and more
     @include lg {
