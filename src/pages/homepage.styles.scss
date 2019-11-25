@@ -21,7 +21,7 @@
             width: 50%;
         }
         @include lg {
-            padding: 140px 50px;
+            padding: 100px 50px 120px;
             width: 40%;
         }
         h1{
@@ -89,12 +89,30 @@
 
 .showcase-section{
     position: relative;
-    padding: 80px 0;
+    text-align: center;
+    @include md {
+        padding: 80px 0;
+        text-align: left;
+    }
+    padding: 20px 0;
     background: rgba(0,100,181, .1);
     .container{
         display: flex;
+        flex-direction: column;
+        @include md {
+            flex-direction: row;
+        }
         .col{
-            flex: 1 0 33.3%;
+            width:100%;
+            @include md {
+                flex: 1 0 33.3%;
+            }
+            &:last-child{
+                display:none;
+                @include md {
+                    display: block;
+                }
+            }
             box-sizing: border-box;
             padding: 50px;
             h1{
@@ -124,6 +142,10 @@
             .showcase-display{
                 position:absolute;
                 top: -50px;
+                display:none;
+                @include md {
+                    display: block
+                }
                 img{
                     width: 320px;
                 }
