@@ -41,7 +41,7 @@ const Homepage = () => (
             <div className='container'>
                 <div className='col'>
                     <h1>What are you waiting for?</h1>
-                    <p>Pick your destination, request a ride, meet your driver,<br></br> enjoy the journey.</p>
+                    <p>Pick your destination, request a ride, meet your driver, enjoy the journey.</p>
                     <div className='download-section'>
                         <a href='#'><img src={GooglePlay} /></a>
                         <a href='#'><img src={AppStore} /></a>
@@ -55,25 +55,27 @@ const Homepage = () => (
             </div>
         </section>
         <section className='benefits-section container'>
-            <div className='col'>
-                <img src={ShieldIcon} alt='safe'/>
-                <h2>Ride Safe</h2>
-                <p>Know in advance the car that is going to pick you up. 
-                    Share your ride and let others know exactly where you are. 
-                    Contact our support team 24/7
-                </p>
-            </div>
-            <div className='col'>
-                <img src={CheapIcon} alt='pay less' />
-                <h2>Pay Less</h2>
-                <p>Great cars and a fantastic experience at everyday prices. 
-                    Move around your city with less and unlock its endless possibilities.</p>
-            </div>
-            <div className='col'>
-                <img src={ClockIcon} alt='fast' />
-                <h2>Get There Fast</h2>
-                <p>Thousands of drivers are available 24/7 at the tap of a button. 
-                    Just pick your destination and get there fast, whenever you need so. </p>
+            <div className='container'>
+                <div className='col'>
+                    <img src={ShieldIcon} alt='safe'/>
+                    <h2>Ride Safe</h2>
+                    <p>Know in advance the car that is going to pick you up. 
+                        Share your ride and let others know exactly where you are. 
+                        Contact our support team 24/7
+                    </p>
+                </div>
+                <div className='col'>
+                    <img src={CheapIcon} alt='pay less' />
+                    <h2>Pay Less</h2>
+                    <p>Great cars and a fantastic experience at everyday prices. 
+                        Move around your city with less and unlock its endless possibilities.</p>
+                </div>
+                <div className='col'>
+                    <img src={ClockIcon} alt='fast' />
+                    <h2>Get There Fast</h2>
+                    <p>Thousands of drivers are available 24/7 at the tap of a button. 
+                        Just pick your destination and get there fast, whenever you need so. </p>
+                </div>
             </div>
         </section>
     </div>
