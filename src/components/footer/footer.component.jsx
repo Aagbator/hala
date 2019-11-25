@@ -2,8 +2,8 @@ import './footer.styles.scss';
 import React from 'react';
 import LineIcon from 'react-lineicons';
 import Logo2 from '../../../src/assets/logo-light.svg';
-import GooglePlay from '../../assets/images/google-play.png';
-import AppStore from '../../assets/images/app-store.png';
+import GooglePlay from '../../assets/images/google-play.svg';
+import AppStore from '../../assets/images/app-store.svg';
 
 const Footer = () =>  (
     <div className='footer'>
