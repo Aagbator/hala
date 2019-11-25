@@ -18,21 +18,23 @@ const Homepage = () => (
             <h1>Ride with ease, <br></br> fast and affordable</h1>
         </div>
         </div>
-        <section className='highlight-section container'>
-            <div className='col'>
-                <img src={RideIcon} alt='ride'/>
-                <h2>Get a Ride</h2>
-                <p>Hala offers you a ride in minutes</p>
-            </div>
-            <div className='col'>
-                <img src={CityIcon} alt='city' />
-                <h2>The best prices</h2>
-                <p>We offer the best prices in your city</p>
-            </div>
-            <div className='col'>
-                <img src={SmartphoneIcon} alt='smartphone' />
-                <h2>Easy to use</h2>
-                <p>Get wherever you need to go as quickly as possible</p>
+        <section className='highlight-section'>
+            <div className='container'>
+                <div className='col'>
+                    <img src={RideIcon} alt='ride'/>
+                    <h2>Get a Ride</h2>
+                    <p>Hala offers you a ride in minutes</p>
+                </div>
+                <div className='col'>
+                    <img src={CityIcon} alt='city' />
+                    <h2>The best prices</h2>
+                    <p>We offer the best prices in your city</p>
+                </div>
+                <div className='col'>
+                    <img src={SmartphoneIcon} alt='smartphone' />
+                    <h2>Easy to use</h2>
+                    <p>Get wherever you need to go as quickly as possible</p>
+                </div>
             </div>
         </section>
         <section className='showcase-section'>

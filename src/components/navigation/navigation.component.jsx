@@ -9,18 +9,18 @@ class Navigation extends Component {
         return(
             <div className='navigation'>
                 <div className='main-nav'>
-                <div className='logo'>
-                    <img src={Logo} height='50' alt='logo' />
-                </div>
-                <nav>
-                    <ul>
-                        <li><a>Ride</a></li>
-                        <li><a>Drive</a></li>
-                        <li><a>Fleet</a></li>
-                        <li><a>Business</a></li>
-                        <li><a>Freight</a></li>
-                    </ul>
-                </nav>
+                    <div className='logo'>
+                        <img src={Logo} height='50' alt='logo' />
+                    </div>
+                    <nav className='nav-menu'>
+                        <ul>
+                            <li><a>Ride</a></li>
+                            <li><a>Drive</a></li>
+                            <li><a>Fleet</a></li>
+                            <li><a>Business</a></li>
+                            <li><a>Freight</a></li>
+                        </ul>
+                    </nav>
                     <a className='get-started'>Sign Up</a>
                 </div>
             </div>
