@@ -41,6 +41,7 @@
                 }
                 li{
                     a{
+                        color: #444;
                         font-size: 2rem;
                         text-decoration: none;
                         display: block;
@@ -52,7 +53,7 @@
                             text-align: none;
                         }
                         padding:20px;
-                        &:hover, &:active{
+                        &:hover, &:active, &.active{
                             @include md {
                                 cursor:pointer;
                                 color: $primary-hover;
