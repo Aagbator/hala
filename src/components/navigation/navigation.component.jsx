@@ -27,10 +27,11 @@ class Navigation extends Component {
                             <li><NavLink activeClassName="active" to='/fleet'>Fleet</NavLink></li>
                             <li><NavLink activeClassName="active" to='/business'>Business</NavLink></li>
                             <li><NavLink activeClassName="active" to='/freight'>Freight</NavLink></li>
+                            <li><NavLink className='get-started' activeClassName="active" to='/sign-up'>Get Started</NavLink></li>
                         </ul>
                         <span onClick={this.toggleMenu} className='close-btn'><LineIcon size='sm' effect='tada' name="close" /></span>
                     </nav>
-                    {/* <a className='get-started'>Sign Up</a> */}
+                    <a className='get-started-btn'>Get Started</a>
                     <span onClick={this.toggleMenu} className='open-btn'><LineIcon size='md' effect='tada' name="menu" /></span>
                 </div>
             </div>
