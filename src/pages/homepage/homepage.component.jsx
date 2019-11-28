@@ -1,14 +1,14 @@
 import React from 'react';
 import './homepage.styles.scss';
-import CityIcon from '../assets/images/icons/city.svg'
-import SmartphoneIcon from '../assets/images/icons/smartphone.svg';
-import RideIcon from '../assets/images/icons/ride.svg';
-import ShieldIcon from '../assets/images/icons/shield.svg';
-import CheapIcon from '../assets/images/icons/cheap.svg';
-import ClockIcon from '../assets/images/icons/clock.svg';
-import GooglePlay from '../assets/images/google-play.png';
-import AppStore from '../assets/images/app-store.png';
-import Mockup from '../assets/images/mockup.png';
+import CityIcon from '../../assets/images/icons/city.svg'
+import SmartphoneIcon from '../../assets/images/icons/smartphone.svg';
+import RideIcon from '../../assets/images/icons/ride.svg';
+import ShieldIcon from '../../assets/images/icons/shield.svg';
+import CheapIcon from '../../assets/images/icons/cheap.svg';
+import ClockIcon from '../../assets/images/icons/clock.svg';
+import GooglePlay from '../../assets/images/google-play.png';
+import AppStore from '../../assets/images/app-store.png';
+import Mockup from '../../assets/images/mockup.png';
 
 const Homepage = () => (
     <div>
