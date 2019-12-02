@@ -111,6 +111,10 @@
             padding: 60px 10px;
             box-sizing: border-box;
             text-align: center;
+            &:hover{
+                background-size: 120%;
+                transition: 5s;
+            }
             @include md {
                 flex: 1 0 50%;
                 padding: 150px 10%;
