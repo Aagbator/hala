@@ -22,12 +22,12 @@ class Navigation extends Component {
                     </NavLink>
                     <nav className={`nav-menu ${this.state.isOpen ? 'is-open' : ''}`}>
                         <ul>
-                            <li><NavLink exact activeClassName="active" to='/'>Ride</NavLink></li>
-                            <li><NavLink activeClassName="active" to='/drive'>Drive</NavLink></li>
-                            <li><NavLink activeClassName="active" to='/fleet'>Fleet</NavLink></li>
-                            <li><NavLink activeClassName="active" to='/business'>Business</NavLink></li>
-                            <li><NavLink activeClassName="active" to='/freight'>Freight</NavLink></li>
-                            <li><NavLink className='get-started' activeClassName="active" to='/sign-up'>Get Started</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} exact activeClassName="active" to='/'>Ride</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} activeClassName="active" to='/drive'>Drive</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} activeClassName="active" to='/fleet'>Fleet</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} activeClassName="active" to='/business'>Business</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} activeClassName="active" to='/freight'>Freight</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} className='get-started' activeClassName="active" to='/sign-up'>Get Started</NavLink></li>
                         </ul>
                         <span onClick={this.toggleMenu} className='close-btn'><LineIcon size='sm' effect='tada' name="close" /></span>
                     </nav>
