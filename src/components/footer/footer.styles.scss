@@ -68,6 +68,21 @@
                         cursor:pointer;
                         color: $primary-hover;
                     }
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: white;
+                        &:hover, &:active, &.active{
+                            @include md {
+                                cursor:pointer;
+                                color: $primary-hover;
+                                background-color: transparent;
+                            }
+                            cursor:pointer;
+                            background-color: $primary-hover;
+                            color: $white;
+                        }
+                    }
                 }
             }
             .download-section{

@@ -5,6 +5,8 @@ import Logo2 from '../../../src/assets/logo-light.svg';
 import GooglePlay from '../../assets/images/google-play.svg';
 import AppStore from '../../assets/images/app-store.svg';
 
+import { NavLink } from 'react-router-dom';
+
 const Footer = () =>  (
     <div className='footer'>
          <div className='container'>
@@ -20,11 +22,11 @@ const Footer = () =>  (
                 <div className='col'>
                     <h2>Quick Links</h2>
                     <ul className='quicklinks'>
-                        <li><a>Ride</a></li>
-                        <li><a>Drive</a></li>
-                        <li><a>Fleet</a></li>
-                        <li><a>Business</a></li>
-                        <li><a>Freight</a></li>
+                    <li><NavLink exact activeClassName="active" to='/'>Ride</NavLink></li>
+                    <li><NavLink activeClassName="active" to='/drive'>Drive</NavLink></li>
+                    <li><NavLink activeClassName="active" to='/fleet'>Fleet</NavLink></li>
+                    <li><NavLink activeClassName="active" to='/business'>Business</NavLink></li>
+                    <li><NavLink activeClassName="active" to='/freight'>Freight</NavLink></li>
                     </ul>
                 </div>
                 <div className='col'>
