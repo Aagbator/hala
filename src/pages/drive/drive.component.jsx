@@ -10,6 +10,7 @@ import WOW from 'wow.js';
 
 class Drive extends Component{
     componentDidMount(){
+        window.scrollTo(0, 0);
         const wow = new WOW();
         wow.init();
     }
