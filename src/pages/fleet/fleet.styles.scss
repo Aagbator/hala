@@ -1,13 +1,13 @@
 @import '../../scss/variables';
 
-.business-banner {
-    background-image: url('../../assets/images/bg.png');
+.fleet-banner {
+    background-image: url('../../assets/images/cargo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     margin-left: auto;
     margin-right: auto;
-    .business-banner-content{
+    .fleet-banner-content{
         width: 100%;
         color: $white;
         text-align: center;
@@ -36,7 +36,12 @@
     }
 }
 
-.highlight-section{
+.fleet-section{
+    background-color: rgba(120, 180, 240, 0.7   );
+    &:first-of-type{
+        background-color: rgba(250, 209, 95, 0.7);
+    }   
+
     @include md {
         padding: 80px 0;
     }
@@ -51,26 +56,45 @@
             @include md {
                 flex: 1 0 33.3%;
                 padding: 20px;
+                text-align: right;
             }
             box-sizing: border-box;
             padding: 20px;
             text-align: center;
             h2{
                 font-family: $primary-font;
-                font-size: 1.2rem;
+                font-size: 2rem;
                 font-weight:600;
                 margin: 10px 0;
             }
             p{
                 font-family: $secondary-font;
-                line-height: 1.4rem;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
                 font-weight: 300;
+            }
+            ul{
+                li{
+                    font-size: 1rem;
+                    margin-top: 10px;
+                    strong{
+                        font-weight: 600;
+
+                    }
+                }
             }
             img{
                 @include md {
-                    height: 100px;
+                    max-height: 300px;
                 }
-                height: 70px;
+                max-height: 200px;
+            }
+
+            &:first-child{
+                @include md {
+                    text-align: left;
+                }
+                text-align: center;
             }
         }
     }

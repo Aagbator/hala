@@ -5,6 +5,7 @@ import Homepage from './pages/homepage/homepage.component';
 import Business from './pages/business/business.component';
 import Drive from './pages/drive/drive.component';
 import Freight from './pages/freight/freight.component';
+import Fleet from './pages/fleet/fleet.component';
 import Footer from './components/footer/footer.component';
 
 function App(props) {
@@ -15,6 +16,7 @@ function App(props) {
         <Route exact path="/" component={Homepage} />
         <Route exact path="/business" component={Business} />
         <Route exact path="/freight" component={Freight} />
+        <Route exact path="/fleet" component={Fleet} />
         <Route exact path="/drive" component={Drive} />
       </Switch>
       <Footer></Footer>
